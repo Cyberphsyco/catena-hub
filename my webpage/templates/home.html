@@ -1,0 +1,27 @@
+{% extends "base_home.html" %}
+
+{% block content %}
+<div id="home-container">
+    <div class="head-container">
+        <p id="home-head">Catena Hub</p>
+        <p id="home-body">
+            And an even wittier subheading to boot.<br> Jumpstart your marketing efforts with this<br> example based on Apple’s marketing pages.
+        </p>
+        <a href="/blog"><button id="home-button">Add Post</button></a>
+    </div>
+    <div class="post">
+    {% for post in posts %}
+    <div id="post">
+    <p id="title">Title: {{post.title}}</p>
+    <div id-"content">
+    <p class="content"> {{post.content}}</br>
+    </div>
+        <div class="post-link">
+        <a href="/delete/{{post.id}}" id="post-link">Delete</a>
+        <a href="/update/{{post.id}}" id="post-link">Edit</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+{% endblock %}

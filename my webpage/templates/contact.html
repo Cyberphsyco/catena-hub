@@ -1,0 +1,28 @@
+{% extends "base_home.html" %}
+
+{% block content %}
+<div id="contact-container">
+    <div class="contact-content">
+        <form action="{{url_for('contact')}}" method="POST">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <p id="flash">{{message}}</p>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+            <p id="contact-head">Contact Us</p>
+            <label id="contact-label">Input Username</label>
+            <input type="text" name="name" id="input" placeholder="Username" required><br>
+            <label id="contact-label">Input Email</label>
+            <input type="email" name="email" id="input" placeholder="example@gmail.com" required><br>
+            <label id="contact-label">Input phonenumber</label>
+            <input type="tel" name="phonenumber" id="input" pattern="\+[0-9]{1,3}[0-9]{4,14}" placeholder="+1234567890" required><br>
+            <label id="contact-label">Input message</label>
+            <textarea></textarea> <br>
+            <input type="submit" value="submit" id="sub-int"><br>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

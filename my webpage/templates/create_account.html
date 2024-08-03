@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="holder">
+<form action="{{url_for('index')}}" method="POST">
+  <p id="header">Create An Account</p>
+  <input type="text" name="username2" id="username" placeholder="Username" required><br>
+  <input type="email" name="email2" id="email" placeholder="E-mail" required><br>
+  <input type="password" name="password2" id="password" placeholder="Password" required><br>
+  <input type="password" name="verify_password" id="verify_password" placeholder="Verify Password" required><br>
+  <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox"> Required</label><br>
+  <input type="submit" value="submit" id="submit">
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+<p id="flash">{{message}}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+</form>
+<a href="/login">Login</a>
+<div>
+</div>
+{% endblock%}

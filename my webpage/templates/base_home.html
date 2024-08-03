@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style2.css')}}">
+    <title>{%block head%} {%endblock%}</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a id="logo-name"href="#">Catena Hub</a></div>
+      <ul>
+        <li class="li">
+          <a  href="/home">Home </a>
+        </li>
+        <li class="li">
+          <a  href="/about">About</a>
+        </li>
+        <li class="li">
+          <a  href="/contact">Contact us</a>
+        </li>
+        <li class="li">
+          <a  href="/blog">Add blog</a>
+        </li>
+        <li class="li" id="li" >
+          <a href="/login"><button>Logout</button></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    {%block content%}
+
+    {%endblock%}
+    <footer>
+      <div id="footer">
+
+        <ul>
+          <li id="footer-head">Features</li>
+          <li id="footer-link"><a href="#">Cool stuff</a></li>
+          <li id="footer-link"> <a href="#">Random stuff</a></li>
+          <li id="footer-link"><a href="#">Team features</a></li>
+          <li id="footer-link"><a href="#">Stuff for developers</a></li>
+          <li id="footer-link"><a href="#">Another one</a></li>
+          <li id="footer-link"><a href="#">Last time</a></li>
+        </ul>
+
+
+        <ul>
+          <li id="footer-head">Resources</li>
+          <li id="footer-link"><a href="#">Resources</a></li>
+          <li id="footer-link"><a href="#">Resources name</a></li>
+          <li id="footer-link"><a href="#">Another resource</a></li>
+          <li id="footer-link"><a href="#">Final stuff</a></li>
+        </ul>
+
+
+
+        <ul>
+          <li id="footer-head">Resources</li>
+          <li id="footer-link"><a href="#">Business</a></li>
+          <li id="footer-link"><a href="#">Education</a></li>
+          <li id="footer-link"><a href="#">Government</a></li>
+          <li id="footer-link"><a href="#">Gaming</a></li>
+        </ul>
+
+
+
+        <ul>
+          <li id="footer-head">About</li>
+          <li id="footer-link"><a href="#">Team</a></li>
+          <li id="footer-link"><a href="#">Location</a></li>
+          <li id="footer-link"><a href="#">Privacy</a></li>
+          <li id="footer-link"><a href="#">Terms</a></li>
+        </ul>
+        <div>
+    </footer>
+    
+</body>
+</html>

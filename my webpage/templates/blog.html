@@ -1,0 +1,15 @@
+{% extends "base_home.html" %}
+
+{% block content %}
+<div id="blog-container">
+    <h1>Add Blog</h1><br><br>
+    <form action="{{url_for('blog')}}" method="POST">
+        <label for="title" id="blog-topic">Title</label>
+        <input type="text" name="title" class="blog-title" required><br><br><br>
+        <label for="content" id="blog-topic">Content</label><br>
+        <textarea name="content" class="blog-content" required></textarea><br>
+        <input type="submit" value="Post" id="submit_blog">
+    
+    </form>
+</div>
+{% endblock %}

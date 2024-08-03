@@ -1,0 +1,70 @@
+body{
+    background: linear-gradient(120deg,gray,rgb(77, 77, 216));
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+input{
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid black;
+    outline: 0px;
+}
+input::placeholder{
+    color: black;
+}
+
+label{
+    text-align: center;
+}
+.holder{
+    place-items: center;
+    display:grid;
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow:5px 5px  20px 10px  rgb(43, 43, 43);
+    backdrop-filter: blur(100px);
+}
+.container{
+    place-items: center;
+    display:grid;
+    margin-left: auto;
+    margin-top: 8%;
+}
+#checkbox{
+    width: 10px;
+    height: 10px;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+#submit{
+    margin-top: 50px;
+    margin-top: 50px;
+    background-color: blue;
+    color: white;
+}
+#submit:hover{
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+#flash{
+    text-align: center;
+    color: red;
+
+}
+a{
+    margin-top: 15px;
+    color: black;
+}
+#header{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
